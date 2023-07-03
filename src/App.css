@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+
+.media-query{
+  display: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Rectangle 48 */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.txtt,.list{
+  color : orangered;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn-1{
+  background-color: orangered;
+}
+.background{
+background-image: url("./Rectangle\ 48.jpg");
+color: antiquewhite;
+height : 600px;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.background2{
+background: url("./Rectangle 47.png");
+color: antiquewhite;
+height : 500px;
+background-size: cover;
+}
+.content{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
 }
-
-.App-link {
-  color: #61dafb;
+.shift{
+  margin-left: 30pc;
 }
+.cstyle1{
+  width :65%;
+  border : 1px dotted ;
+  margin-left : 17pc;
+}
+.foot{
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+.logos{
+  display: flex;
+  flex-direction: row;
+}
+.buttons{
+  border-radius: 40px;
+}
+.main1{
+  margin-top: -300px;
+  margin-left: 270px;
+  margin-bottom: 0;
+}
+.main2{
+  margin-top: -90px;
+  margin-left: -310px;
+  margin-bottom: 0;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+}
+.cstyle2{
+  display: none;
+}
+.burger{
+  display:none;
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top:15px;
+}
+.line{
+  width:30px;
+  background-color: grey;
+  height: 3px;
+  margin: 5px 3px;
+}
+@media screen and (max-width: 414px)
+{
+  .default{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .media-query{
+    display: flex;
+  }
+  .background{
+    background-image: none;
+    color:black;
+  }
+  .btn2{
+    color: orangered;
+    border:2px solid orangered;
+  }
+  .burger{
+    display: block;
+  }
+  .vclass{
+    display: none;
+  }
+  .logod{
+    height : 70px;
+    margin-left: -190px;
+  }
+  .main1{
+    margin-left:-95px;
+    margin-top:-200px;
+
+  }
+  .imgg2{
+    height:600px;
+  }
+  .imgg1{
+     height: 400px;
+  }
+  .main2{
+     margin-left :145px;
+     margin-top :-450px;
+  }
+  .shift{
+    margin-left: 5pc;
+    margin-bottom: 20px;
+  }
+  .cstyle1{
+    display: none;
+  }
+  .cstyle2{
+    display: block;
+    border: 2px solid gray;
+  }
+  .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .coll{
+    display: flex;
+    flex-direction: row;
   }
 }
